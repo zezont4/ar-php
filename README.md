@@ -8,9 +8,9 @@ Run composer install.
 ## Usage
 
     <?php
-	use Johntaa\Arabic\I18N_Arabic;
+	use Johntaa\Arabic\Arabic;
 	
-		$Arabic = new I18N_Arabic('Glyphs'); 
+		$Arabic = new Arabic('Glyphs'); 
 		
 		$text ="";
 			$text = $Arabic->utf8Glyphs($text); 
