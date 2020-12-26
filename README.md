@@ -1,7 +1,17 @@
 # Contribution to Ar-PHP Library, namespace-psr4 added
 
+## I changed class names to match its file name
+
 ## Install
-Add the "zezont4/ar-php": "dev-master" into the require section of your composer.json.
+Add this code into composer.json:
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/zezont4/ar-php"
+        }
+    ],
+    
+Add the "johntaa/ar-php": "dev-master" into the require section of your composer.json.
 Run composer install.
 
 
