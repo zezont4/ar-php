@@ -157,11 +157,11 @@ class Arabic
             }
             
             spl_autoload_extensions('.php,.inc,.class');
-            spl_autoload_register('I18N_Arabic::autoload', false);
+            spl_autoload_register('Arabic::autoload', false);
         }
         
         if ($this->_useException) {
-            set_error_handler('I18N_Arabic::myErrorHandler');
+            set_error_handler('Arabic::myErrorHandler');
         }
         
         if ($library) {
@@ -236,10 +236,10 @@ class Arabic
         }
 
         $this->myFile  = $library;
-        //$this->myClass = 'I18N_Arabic_' . $library; Nasser
-       // $class         = 'I18N_Arabic_' . $library; Nasser
-        $this->myClass = '\Johntaa\Arabic\Arabic\I18N_Arabic_' . $library ;
-        $class         = '\Johntaa\Arabic\Arabic\I18N_Arabic_' . $library;
+        //$this->myClass = 'Arabic_' . $library; Nasser
+       // $class         = 'Arabic_' . $library; Nasser
+        $this->myClass = '\Johntaa\Arabic\Arabic\Arabic_' . $library ;
+        $class         = '\Johntaa\Arabic\Arabic\Arabic_' . $library;
 
         if (!$this->_useAutoload) {
 			 
