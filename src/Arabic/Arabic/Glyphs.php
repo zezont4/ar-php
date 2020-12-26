@@ -210,7 +210,7 @@ class Glyphs
         $output   = '';
         
         $_temp = mb_strlen($str);
-
+        $chars = [];
         for ($i = 0; $i < $_temp; $i++) {
             $chars[] = mb_substr($str, $i, 1);
         }
