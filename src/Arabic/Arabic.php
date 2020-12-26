@@ -238,8 +238,8 @@ class Arabic
         $this->myFile  = $library;
         //$this->myClass = 'Arabic_' . $library; Nasser
        // $class         = 'Arabic_' . $library; Nasser
-        $this->myClass = '\Johntaa\Arabic\Arabic\Arabic_' . $library ;
-        $class         = '\Johntaa\Arabic\Arabic\Arabic_' . $library;
+        $this->myClass = '\Johntaa\Arabic\Arabic\\' . $library ;
+        $class         = '\Johntaa\Arabic\Arabic\\' . $library;
 
         if (!$this->_useAutoload) {
 			 
@@ -420,7 +420,7 @@ class Arabic
             if ($convStr == '' && $str != '') {
                 include self::getClassFile('CharsetC');
 
-                $c = I18N_Arabic_CharsetC::singleton();
+                $c = CharsetC::singleton();
                 
                 if ($inputCharset == 'cp1256') {
                     $convStr = $c->win2utf($str);
