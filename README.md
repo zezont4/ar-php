@@ -4,12 +4,13 @@
 
 ## Install
 Add this code into composer.json:
-"repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/zezont4/ar-php"
-        }
-    ],
+
+	"repositories": [
+		{
+		    "type": "vcs",
+		    "url": "https://github.com/zezont4/ar-php"
+		}
+	    ],
     
 Add the "johntaa/ar-php": "dev-master" into the require section of your composer.json.
 Run composer install.
