@@ -278,7 +278,7 @@ class Glyphs
                 || $prevChar == 'لإ' || $prevChar == 'ل') 
                 && (mb_strpos('آأإا', $crntChar) !== false)
             ) {
-                if (mb_strpos($this->_prevLink, $chars[$i - 2]) !== false) {
+                if (mb_strpos($this->_prevLink, $chars[$i - 1]) !== false) {
                     $form++;
                 }
                 
